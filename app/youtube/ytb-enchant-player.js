@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name      YTB enchant player
-// @version   1.0.0
+// @version   1.0.1
 // @description Adds playback controls for speed, looping, and quality to the YouTube player.
 // @include   *://*.youtube.com/**
 // @exclude   *://accounts.youtube.com/*
@@ -785,8 +785,6 @@
 
   /*!
    * credit to Benjamin Philipp
-   * MIT
-   * original source: https://greasyfork.org/en/scripts/433051-trusted-types-helper
    */
   const overwrite_default = false;
   const passThroughFunc = function (string, sink) {
@@ -835,3 +833,4 @@
     await QualityControl.run();
   })();
 })();
+
